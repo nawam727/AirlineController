@@ -60,14 +60,6 @@
                             <td><%=rs.getString("clpass")%></td>
                         </tr>
                         <tr>
-                            <td>phone number 1</td>
-                            <td><%=rs.getInt("clt")%></td>
-                        </tr>
-                        <tr>
-                            <td>phone number 2</td>
-                            <td><%=rs.getInt("cltt")%></td>
-                        </tr>
-                        <tr>
                             <td>Vaccine Card number</td>
                             <td><%=rs.getInt("clvno")%></td>
                         </tr>

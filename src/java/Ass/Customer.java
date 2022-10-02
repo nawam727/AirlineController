@@ -29,14 +29,14 @@ class Customer
     }
 */
 
-    void addCus(String Fname, String Lname, String Email, String Pass, int t1, int t2, int vccno) 
+    void addCus(String Fname, String Lname, String Email, String Pass) 
     {
                 String url="jdbc:mysql://localhost:3306/testair";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection(url,"root","");
             st=con.createStatement();
-            String sql="INSERT INTO client(cfname,clname,clemail,clpass,clt,cltt,clvno) VALUES ('"+Fname+"','"+Lname+"','"+Email+"','"+Pass+"','"+t1+"','"+t2+"','"+vccno+"')";
+            String sql="INSERT INTO client(cfname,clname,clemail,clpass) VALUES ('"+Fname+"','"+Lname+"','"+Email+"','"+Pass+"')";
             st.executeUpdate(sql);
             
         } catch (SQLException | ClassNotFoundException ex) {
