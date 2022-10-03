@@ -16,13 +16,18 @@
         <title>JSP Page</title>
     </head>
     <body>
-        
+        <br>
+        <br>
+        <br>
             <h3> 
+                <center>
                 <table boder="0">
                     <th>
-                        results for client Id 
+                        Results for client Id :
                         <%=request.getParameter("txtcusId")%> 
                     </th>
+                    <tr></tr>
+                    <tr></tr>
                 <%
                     try
                     {
@@ -83,13 +88,7 @@
                     }
                       %>
                 </table>
-        <table>
-            <tr>
-                <td>
-                    
-                </td>
-            </tr>
-        </table>
+        </center>
         </h3>
     </body>
 </html>

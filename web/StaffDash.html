@@ -11,12 +11,23 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+    <center>
         <div>
+            <br>
+            <br>
+            <br>
             <h4>Passenger Details</h4>
             <form action="customer.jsp" method="post">
-                <input type="text" name="txtcusId" placeholder="customer id"/>
-            <input type="submit" value="Search Details" />
+                <input type="text" name="txtcusId" placeholder="Customer ID"/>
+                <input type="submit" value="Search Details" />
+            </form>
+            <br>
+            <h4>Flight Details</h4>
+            <form action="WEB-INF/flightsdetails.jsp" method="POST">
+                <input type="text" name="txtflId" placeholder="Flight ID"/>
+                <input type="submit" value="Search Details" />
             </form>
         </div>
+    </center>
     </body>
 </html>
