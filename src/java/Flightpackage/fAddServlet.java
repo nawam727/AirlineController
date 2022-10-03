@@ -86,7 +86,7 @@ public class fAddServlet extends HttpServlet {
         
         flight x=new flight();
         x.addNewFlight(pilot1Name,pilot2Name,aTime,aDate,aAir,dTime,dDate,dAir,SC,ASC);
-        response.sendRedirect("index.html");
+        response.sendRedirect("flightSucc.html");
     }
 
     /**
