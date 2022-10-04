@@ -9,29 +9,26 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/search.css">
     </head>
     <body>
     <center>
+        <center>
+                <div class="topnav">
+                <a class="active" href="StaffDash.html">Home</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="flights.html">Flights</a>
+                <a href="#about">Sign In</a>
+                <a href="#about">Sign Up</a>
+                </div> 
+            </center>
         <div>
-            <br>
-            <br>
             <br>
             <h4>Passenger Details</h4>
             <form action="customer.jsp" method="post">
-                <input type="text" name="txtcusId" placeholder="Customer ID"/>
-                <input type="submit" value="Search Details" />
-            </form>
-            <br>
-            <h4>Flight Details</h4>
-            <form action="flightsdetails.jsp" method="POST">
-                <input type="text" name="txtflId" placeholder="Flight ID"/>
-                <input type="submit" value="Search Details" />
-            </form>
-            <br>
-            <h4>Ticket Details</h4>
-            <form action="ticketsdetails.jsp" method="POST">
-                <input type="text" name="txttkId" placeholder="Ticket ID"/>
-                <input type="submit" value="Search Details" />
+                <input class="box" type="text" name="txtcusId" placeholder="Customer ID"/>
+                <input class="button" type="submit" value="Search Details" />
             </form>
         </div>
     </center>

@@ -1,0 +1,19 @@
+.button{
+    padding: 10px;
+    background-color: #04AA6D;
+    border-radius: 5px;
+}
+
+.box{
+    padding: 10px;
+}
+
+.btn{
+    padding: 10px;
+    background-color: #04AA6D;
+    border-radius: 5px;
+}
+
+body{
+    background-color: #eeffe6;
+}
