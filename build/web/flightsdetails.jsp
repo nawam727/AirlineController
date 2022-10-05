@@ -109,12 +109,15 @@
                             <td><%=rs.getInt("avaiSeat")%></td>
                         </tr>
                         <tr>
+
                             <td><input type="submit" value="Edit"/></td>
                             <td><input type="reset" value="Back"</td>
+
                             <td><input class="bttn" type="submit" value="Edit"/></td>
                             <td><form action="flights.html" method="POST">
                                     <input class="bttn" type="submit" value="Back">
                                 </form></td>
+
                         </tr>
                            <% }
                     }
