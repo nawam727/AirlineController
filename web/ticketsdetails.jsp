@@ -1,7 +1,7 @@
 <%-- 
-    Document   : customer
-    Created on : Oct 1, 2022, 6:54:34 PM
-    Author     : navee
+    Document   : ticketsdetails
+    Created on : Oct 3, 2022, 8:58:37 PM
+    Author     : DELL
 --%>
 
 <%@page import="java.sql.ResultSet"%>
@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
-        <center>
+            <center>
                 <div class="topnav">
                 <a class="active" href="StaffDash.html">Home</a>
                 <a href="tickets.html">Tickets</a>
@@ -27,19 +27,14 @@
                 <a href="#about">Sign Up</a>
                 </div> 
             </center>
-        <br>
-        <br>
-        <br>
-            <h3> 
-                <center>
-                <table boder="0">
-                    <th>
-                        Results for client Id :
-                        <%=request.getParameter("txtcusId")%> 
-                    </th>
-                    <tr></tr>
-                    <tr></tr>
-                <%
+            <center>
+                <table border="0">
+                        
+                            
+                                Results for Flight Id :
+                                <%=request.getParameter("txttkId")%>
+                            
+                            <%
                     try
                     {
                         Class.forName("com.mysql.jdbc.Driver");
@@ -48,44 +43,37 @@
                         
                         Statement st= con.createStatement();
                         
-                        int cusId= Integer.parseInt(request.getParameter("txtcusId"));
-                        String query="Select * from client where clientId='"+cusId+"'";
+                        int tkId= Integer.parseInt(request.getParameter("txttkId"));
+                        String query="Select * from tickets where ticketID='"+tkId+"'";
                         ResultSet rs=st.executeQuery(query);
                         while(rs.next())
                         {
-                        %>
-                    
+                %>
                         <tr>
-                            <td>User Id</td>
-                            <td><%=rs.getInt("clientId")%></td>
+                            <td>Ticket ID</td>
+                            <td><%=rs.getInt("ticketID")%></td>
                         </tr>
                         <tr>
-                            <td>First Name</td>
-                            <td><%=rs.getString("cfname")%></td>
+                            <td>Departure Date</td>
+                            <td><%=rs.getString("depDate")%></td>
                         </tr>
                         <tr>
-                            <td>Last Name</td>
-                            <td><%=rs.getString("clname")%></td>
+                            <td>Departure Time</td>
+                            <td><%=rs.getString("depTime")%></td>
                         </tr>
                         <tr>
-                            <td>Email</td>
-                            <td><%=rs.getString("clemail")%></td>
+                            <td>Price</td>
+                            <td><%=rs.getInt("price")%></td>
                         </tr>
                         <tr>
-                            <td>Password</td>
-                            <td><%=rs.getString("clpass")%></td>
+                            <td>Seat No</td>
+                            <td><%=rs.getInt("seatNo")%></td>
                         </tr>
                         <tr>
-                            <td>Vaccine Card number</td>
-                            <td><%=rs.getInt("clvno")%></td>
+                            <td>Class</td>
+                            <td><%=rs.getString("class")%></td>
                         </tr>
-                        <tr>
-                            <td><input class="bttn" type="submit" value="edit"/></td>
-                            <td><form action="StaffDash.html" method="POST">
-                                    <input class="bttn" type="submit" value="Back">
-                                </form></td>
-                        </tr>
-                        <% }
+                               <% }
                     }
                       catch(Exception e)
                     {
@@ -93,7 +81,7 @@
                     }
                       %>
                 </table>
-        </center>
+            </center>
         </h3>
     </body>
 </html>
