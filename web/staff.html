@@ -14,25 +14,22 @@ and open the template in the editor.
     </head>
     <body>
     <center>
-        <center>
+        <div>
+            <center>
                 <div class="topnav">
-                <a class="active" href="StaffDash.html">Home</a>
-                <a href="tickets.html">Tickets</a>
-                <a href="flights.html">Flights</a>
-                <a href="#about">Sign In</a>
-                <a href="logstaff.html">Sign Up</a>
+                <a class="active" href="adminDash.html">Home</a>
+                <a href="adticket.html">Tickets</a>
+                <a href="adflights.html">Flights</a>
+                <a href="staff.html">Staff</a>
                 </div> 
             </center>
-        <div>
-            <br>
-            <h3>Staff</h3>
-            <br>
-            <h4>Passenger Details</h4>
-            <form action="customer.jsp" method="post">
-                <input class="box" type="text" name="txtcusId" placeholder="Customer ID"/>
+        </div>
+        <br>
+            <h4>Staff Details</h4>
+            <form action="staff.jsp" method="post">
+                <input class="box" type="text" name="txtsfId" placeholder="Staff ID"/>
                 <input class="button" type="submit" value="Search Details" />
             </form>
-        </div>
-    </center>
+    </center>        
     </body>
 </html>
