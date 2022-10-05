@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.sql.DriverManager;
 import java.sql.Connection;
 
-public final class customer_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class flightsdetails_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -59,14 +59,17 @@ public final class customer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>JSP Page</title>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("        \r\n");
-      out.write("            <h3> \r\n");
-      out.write("                <table boder=\"0\">\r\n");
+      out.write("        <br>\r\n");
+      out.write("        <br>\r\n");
+      out.write("        <br>\r\n");
+      out.write("        <h3>\r\n");
+      out.write("            <center>\r\n");
+      out.write("                <table border=\"0\">\r\n");
       out.write("                    <th>\r\n");
-      out.write("                        results for client Id \r\n");
+      out.write("                        Results for Flight Id :\r\n");
       out.write("                        ");
-      out.print(request.getParameter("txtcusId"));
-      out.write(" \r\n");
+      out.print(request.getParameter("txtflId"));
+      out.write("\r\n");
       out.write("                    </th>\r\n");
       out.write("                ");
 
@@ -78,67 +81,84 @@ public final class customer_jsp extends org.apache.jasper.runtime.HttpJspBase
                         
                         Statement st= con.createStatement();
                         
-                        int cusId= Integer.parseInt(request.getParameter("txtcusId"));
-                        String query="Select * from client where clientId='"+cusId+"'";
+                        int fliId= Integer.parseInt(request.getParameter("txtflId"));
+                        String query="Select * from flights where flightId='"+fliId+"'";
                         ResultSet rs=st.executeQuery(query);
                         while(rs.next())
                         {
-                        
+                
       out.write("\r\n");
-      out.write("                    \r\n");
       out.write("                        <tr>\r\n");
-      out.write("                            <td>User Id</td>\r\n");
+      out.write("                            <td>Flight ID</td>\r\n");
       out.write("                            <td>");
-      out.print(rs.getInt("clientId"));
+      out.print(rs.getInt("flightId"));
       out.write("</td>\r\n");
       out.write("                        </tr>\r\n");
       out.write("                        <tr>\r\n");
-      out.write("                            <td>First Name</td>\r\n");
+      out.write("                            <td>Captain Name</td>\r\n");
       out.write("                            <td>");
-      out.print(rs.getString("cfname"));
+      out.print(rs.getString("pilot1"));
       out.write("</td>\r\n");
       out.write("                        </tr>\r\n");
       out.write("                        <tr>\r\n");
-      out.write("                            <td>Last Name</td>\r\n");
+      out.write("                            <td>Second Officer Name</td>\r\n");
       out.write("                            <td>");
-      out.print(rs.getString("clname"));
+      out.print(rs.getString("pilot2"));
       out.write("</td>\r\n");
       out.write("                        </tr>\r\n");
       out.write("                        <tr>\r\n");
-      out.write("                            <td>Email</td>\r\n");
+      out.write("                            <td>Arrival Time</td>\r\n");
       out.write("                            <td>");
-      out.print(rs.getString("clemail"));
+      out.print(rs.getString("arriTime"));
       out.write("</td>\r\n");
       out.write("                        </tr>\r\n");
       out.write("                        <tr>\r\n");
-      out.write("                            <td>Password</td>\r\n");
+      out.write("                            <td>Departure Time</td>\r\n");
       out.write("                            <td>");
-      out.print(rs.getString("clpass"));
+      out.print(rs.getString("depTime"));
       out.write("</td>\r\n");
       out.write("                        </tr>\r\n");
       out.write("                        <tr>\r\n");
-      out.write("                            <td>phone number 1</td>\r\n");
+      out.write("                            <td>Arrival Date</td>\r\n");
       out.write("                            <td>");
-      out.print(rs.getInt("clt"));
+      out.print(rs.getString("arriDate"));
       out.write("</td>\r\n");
       out.write("                        </tr>\r\n");
       out.write("                        <tr>\r\n");
-      out.write("                            <td>phone number 2</td>\r\n");
+      out.write("                            <td>Departure Date</td>\r\n");
       out.write("                            <td>");
-      out.print(rs.getInt("cltt"));
+      out.print(rs.getString("depDate"));
       out.write("</td>\r\n");
       out.write("                        </tr>\r\n");
       out.write("                        <tr>\r\n");
-      out.write("                            <td>Vaccine Card number</td>\r\n");
+      out.write("                            <td>Arrival Airport</td>\r\n");
       out.write("                            <td>");
-      out.print(rs.getInt("clvno"));
+      out.print(rs.getString("arriAirport"));
       out.write("</td>\r\n");
       out.write("                        </tr>\r\n");
       out.write("                        <tr>\r\n");
-      out.write("                            <td><input type=\"submit\" value=\"edit\"/></td>\r\n");
-      out.write("                            <td><input type=\"reset\" value=\"back\"</td>\r\n");
+      out.write("                            <td>Departure Airport</td>\r\n");
+      out.write("                            <td>");
+      out.print(rs.getString("depAir"));
+      out.write("</td>\r\n");
       out.write("                        </tr>\r\n");
-      out.write("                        ");
+      out.write("                        <tr>\r\n");
+      out.write("                            <td>Number of Seats</td>\r\n");
+      out.write("                            <td>");
+      out.print(rs.getInt("SeatCount"));
+      out.write("</td>\r\n");
+      out.write("                        </tr>\r\n");
+      out.write("                        <tr>\r\n");
+      out.write("                            <td>Number of Available Seats</td>\r\n");
+      out.write("                            <td>");
+      out.print(rs.getInt("avaiSeat"));
+      out.write("</td>\r\n");
+      out.write("                        </tr>\r\n");
+      out.write("                        <tr>\r\n");
+      out.write("                            <td><input type=\"submit\" value=\"Edit\"/></td>\r\n");
+      out.write("                            <td><input type=\"reset\" value=\"Back\"</td>\r\n");
+      out.write("                        </tr>\r\n");
+      out.write("                           ");
  }
                     }
                       catch(Exception e)
@@ -148,13 +168,7 @@ public final class customer_jsp extends org.apache.jasper.runtime.HttpJspBase
                       
       out.write("\r\n");
       out.write("                </table>\r\n");
-      out.write("        <table>\r\n");
-      out.write("            <tr>\r\n");
-      out.write("                <td>\r\n");
-      out.write("                    \r\n");
-      out.write("                </td>\r\n");
-      out.write("            </tr>\r\n");
-      out.write("        </table>\r\n");
+      out.write("            </center>\r\n");
       out.write("        </h3>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
