@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/flight.css">
+    </head>
+    <body>
+    <center>
+        <center>
+                <div class="topnav">
+                <a class="active" href="StaffDash.html">Home</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="addFlights.html">Flights</a>
+                <a href="#about">Sign In</a>
+                <a href="#about">Sign Up</a>
+                </div> 
+            </center>
+        <div>
+            <form action="fAddServlet" method="POST">
+                <h3>Add Flights</h3>
+                <table border="0">
+                    
+                    <tbody>
+
+                        <tr>
+                            <td><input type="text" name="txtPilot1" placeholder="First pilot name"/></td>
+                            <td><input type="text" name="txtPilot2" placeholder="Second pilot name"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="txtATime" placeholder="Arrival Time"/></td>
+                            <td><input type="text" name="txtDTime" placeholder="Departure Time"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="txtADate" placeholder="Arrival Date"/></td>
+                            <td><input type="text" name="txtDDate" placeholder="Departure Date"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="txtAAir" placeholder="Arrival Airport"/></td>
+                            <td><input type="text" name="txtDAir" placeholder="Departure Airport"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="txtSC" placeholder="Seat Count"/></td>
+                            <td><input type="text" name="textAvaS" placeholder="Available seat count"/></td>
+                        </tr>
+                        <tr>
+                            <td><input class="bttn" type="submit" value="Save" /></td>
+                              <td>  <input class="bttn" type="reset" value="Clear All" /></td>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+
+            </form>
+        </div>
+        </center>
+    </body>
+</html>

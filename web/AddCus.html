@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/flight.css">
+    </head>
+    <body>
+        <div>
+            <center>
+                <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="#news">Tickets</a>
+                <a href="">Flights</a>
+                <a href="#about">Sign In</a>
+                <a href="AddCus.html">Sign Up</a>
+                </div> 
+            </center>
+        </div>
+        <div>
+            <center>
+            <h2>Creating a Account</h2>
+            <form action="addCusServlet" method="post">
+                <table border="0">
+                    <tr>
+                        <td>First name</td>
+                        <td><input type="text" name="txtfname"/></td>
+                    </tr>
+                    <tr>
+                        <td>Last name</td>
+                        <td><input type="text" name="txtlnames"/></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" name="txtemail"/></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="txtpass" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input class="bttn" type="submit" value="Create Account" /></td>
+                        <td><input class="bttn" type="reset" value="Clear"/></td>
+                    </tr>
+                </table>
+            </form>
+            </center>
+        </div>    
+    </body>
+</html>
