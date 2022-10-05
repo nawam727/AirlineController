@@ -2,13 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-
-        <group/>
-
         <group>
             <file>file:/D:/NSBM/2nd%20year/Y2%20S1/DEA/Project/AirlineController/web/AddCus.html</file>
             <file>file:/D:/NSBM/2nd%20year/Y2%20S1/DEA/Project/AirlineController/web/StaffDash.html</file>
         </group>
-
+        <group>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/StaffDash.html</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/AddCus.html</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/SearchFlightDetails.html</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/flightInfo.jsp</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/customer.jsp</file>
+        </group>
     </open-files>
 </project-private>
