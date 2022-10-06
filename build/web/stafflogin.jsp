@@ -33,7 +33,7 @@
                     </tr>
                     
                     <tr>
-                        <td><br><input type="text" name="supass"  placeholder="Password"/></td>
+                        <td><br><input type="password" name="supass"  placeholder="Password"/></td>
                     </tr>
                 
                     <tr> 
