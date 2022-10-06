@@ -14,8 +14,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="css/flight.css">
+        <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
+    <center>
         <h1>Edit Flight Details</h1>
          <% 
                   String fliId=session.getAttribute("flId").toString();
@@ -83,8 +86,8 @@
                         <td><input type="text" name="NOA" value='<%=rs.getInt("avaiSeat")%>'></td>
                     </tr>
                     <tr>
-                        <td><center><input type="submit" value="save"></center></td>
-                        <td><center><input type="reset" value="clear"></center></td>
+                        <td><center><input class="bttn" type="submit" value="Save"></center></td>
+                        <td><center><input class="bttn" type="reset" value="Clear"></center></td>
                     </tr>
                       <% }
                   }
@@ -95,6 +98,7 @@
                       %>
         
                 </table>
-                 </form>  
+                 </form>
+    </center>
     </body>
 </html>

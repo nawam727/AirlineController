@@ -30,9 +30,11 @@
             <center>
                 <table border="0">
                         
-                            
-                                Results for Flight Id :
-                                <%=request.getParameter("txttkId")%>
+                    <th>
+                        Results for Flight Id :
+                        <%=request.getParameter("txttkId")%>
+                    </th>
+                                
                             
                             <%
                     try
