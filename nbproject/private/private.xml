@@ -3,6 +3,39 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+
+            <file>file:/E:/test/AirlineController/web/StaffDash.html</file>
+            <file>file:/E:/test/AirlineController/web/edit.jsp</file>
+            <file>file:/E:/test/AirlineController/web/delete.jsp</file>
+            <file>file:/E:/test/AirlineController/web/save.jsp</file>
+            <file>file:/E:/test/AirlineController/web/customer.jsp</file>
+
+
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/StaffDash.html</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/SearchFlightDetails.html</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/css/flight.css</file>
+
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/nuthara/AirlineController/web/tickets.html</file>
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/nuthara/AirlineController/web/logstaff.html</file>
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/nuthara/AirlineController/web/StaffDash.html</file>
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/nuthara/AirlineController/web/flights.html</file>
+
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/src/java/Ass/addCusServlet.java</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/StaffDash.html</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/css/flight.css</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/AddCus.html</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/logstaff.html</file>
+
+        </group>
+        <group>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/stafflogin.jsp</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/succlogin.jsp</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/StaffDash.html</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/css/flight.css</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/src/java/staffpackage/StloginServlet.java</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/logstaff.html</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/error.jsp</file>
+        </group>
             <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/Project/AirlineController/web/flights.html</file>
             <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/Project/AirlineController/web/addFlights.html</file>
             <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/Project/AirlineController/web/css/flight.css</file>
@@ -22,7 +55,15 @@
             <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/nuthara/AirlineController/web/logstaff.html</file>
             <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/nuthara/AirlineController/web/StaffDash.html</file>
             <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/nuthara/AirlineController/web/flights.html</file>
+
+        </group>
+        <group>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/StaffDash.html</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/SearchFlightDetails.html</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/css/flight.css</file>
+
             <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/nuthara/AirlineController/web/css/search.css</file>
+
         </group>
     </open-files>
 </project-private>
