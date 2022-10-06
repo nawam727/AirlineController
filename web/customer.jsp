@@ -1,8 +1,10 @@
 <%-- 
     Document   : customer
-    Created on : Oct 1, 2022, 6:54:34 PM
+    Created on : Sep 30, 2022, 9:40:07 AM
     Author     : navee
 --%>
+
+
 
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
@@ -16,8 +18,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        
+            
             <h3> 
+                <center>
+                    <form action="edit.jsp" method="post">
                 <table boder="0">
                     <th>
                         results for client Id 
@@ -33,12 +37,14 @@
                         Statement st= con.createStatement();
                         
                         int cusId= Integer.parseInt(request.getParameter("txtcusId"));
+                        session.setAttribute("CID",cusId);
+                        
                         String query="Select * from client where clientId='"+cusId+"'";
                         ResultSet rs=st.executeQuery(query);
                         while(rs.next())
                         {
                         %>
-                    
+                
                         <tr>
                             <td>User Id</td>
                             <td><%=rs.getInt("clientId")%></td>
@@ -66,6 +72,7 @@
                         <tr>
                             <td><input type="submit" value="edit"/></td>
                             <td><input type="reset" value="back"</td>
+                            
                         </tr>
                         <% }
                     }
@@ -75,13 +82,11 @@
                     }
                       %>
                 </table>
-        <table>
-            <tr>
-                <td>
-                    
-                </td>
-            </tr>
-        </table>
+                    </form>
+                </center>
+           <form action="delete.jsp">   
+                    <input type="submit" value="delete">
+               </form>  
         </h3>
     </body>
 </html>

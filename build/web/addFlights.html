@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+    <center>
         <div>
             <form action="fAddServlet" method="POST">
                 <h3>Add Flights</h3>
@@ -23,12 +24,12 @@ and open the template in the editor.
                             <td><input type="text" name="txtPilot2" placeholder="Second pilot name"/></td>
                         </tr>
                         <tr>
-                            <td><input type="text" name="txtATime" placeholder="Arrival Time"/></td>
-                            <td><input type="text" name="txtDTime" placeholder="Departure Time"/></td>
+                            <td><input type="text" name="txtATime" placeholder="Arrival Time: HH:MM"/></td>
+                            <td><input type="text" name="txtDTime" placeholder="Departure Time: HH:MM"/></td>
                         </tr>
                         <tr>
-                            <td><input type="text" name="txtADate" placeholder="Arrival Date"/></td>
-                            <td><input type="text" name="txtDDate" placeholder="Departure Date"/></td>
+                            <td><input type="text" name="txtADate" placeholder="Arrival Date: D:M:Y"/></td>
+                            <td><input type="text" name="txtDDate" placeholder="Departure Date: D:M:Y"/></td>
                         </tr>
                         <tr>
                             <td><input type="text" name="txtAAir" placeholder="Arrival Airport"/></td>
@@ -48,5 +49,6 @@ and open the template in the editor.
 
             </form>
         </div>
+        </center>
     </body>
 </html>
