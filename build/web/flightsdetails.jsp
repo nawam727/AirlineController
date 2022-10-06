@@ -14,20 +14,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-    </head>
-    <body>
-        <br>
-        <br>
-        <br>
-        <h3>
-            <center>
-                <table border="0">
-                    <th>
-                        Results for Flight Id :
-                        <%=request.getParameter("txtflId")%>
-                    </th>
         <link rel="stylesheet" href="css/flight.css">
         <link rel="stylesheet" href="css/navbar.css">
+    </head>
+    <body>
+        <h3>
     </head>
     <body>
         <center>
@@ -41,6 +32,7 @@
             </center>
     <br>
     <br>
+    
     <br>
             <center>
                 <table border="0">
