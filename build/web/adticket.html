@@ -13,29 +13,25 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/search.css">
     </head>
     <body>
-    <center>
-        <center>
+        <div>
+            <center>
                 <div class="topnav">
-                <a class="active" href="StaffDash.html">Home</a>
-                <a href="tickets.html">Tickets</a>
-                <a href="flights.html">Flights</a>
-                <a href="#about">Sign In</a>
-                <a href="logstaff.html">Sign Up</a>
+                <a class="active" href="adminDash.html">Home</a>
+                <a href="adticket.html">Tickets</a>
+                <a href="adflights.html">Flights</a>
+                <a href="staff.html">Staff</a>
                 </div> 
             </center>
+        </div>
         <div>
-            <br>
-            <br>
-            <br>
-            <h4>Passenger Details</h4>
-            <form action="customer.jsp" method="post">
-
-                <input class="box" type="text" name="txtcusId" placeholder="Customer ID"/>
+            <center>
+                <br>
+            <h4>Ticket Details</h4>
+            <form class="" action="ticketsdetails.jsp" method="POST">
+                <input class="box" type="text" name="txttkId" placeholder="Ticket ID"/>
                 <input class="button" type="submit" value="Search Details" />
             </form>
-            <br>
-
+            </center>
         </div>
-    </center>
     </body>
 </html>
