@@ -14,7 +14,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-<<<<<<< HEAD
+
     </head>
     <body>
         <br>
@@ -23,8 +23,7 @@
         <h3>
             <center>
 
-=======
->>>>>>> 64d3ef2acf95d9272e328ecee9a151a649f174b5
+
         <link rel="stylesheet" href="css/flight.css">
         <link rel="stylesheet" href="css/navbar.css">
     </head>
@@ -127,6 +126,9 @@
                       %>
                 </table>
                </form>
+                <form action="deleteflight.jsp">
+                    <input type="submit" value="delete" />
+                </form>
             </center>
         </h3>
     </body>
