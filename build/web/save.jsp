@@ -13,9 +13,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="css/flight.css">
+        <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
-        <h3>data saved</h3>
+    <center>
+        <h3>Data Saved</h3>
                         <% 
                    String cusId=session.getAttribute("CID").toString();
                    int a=Integer.parseInt(cusId);
@@ -56,7 +59,8 @@
                     }
                       %>
                       <form action="StaffDash.html">
-                          <input type="submit" value="home"/>
+                          <input class="bttn" type="submit" value="Home"/>
                       </form>
+    </center>
     </body>
 </html>
