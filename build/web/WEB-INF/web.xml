@@ -4,9 +4,17 @@
         <servlet-name>StaffServlet</servlet-name>
         <servlet-class>staffpackage.StaffServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>StloginServlet</servlet-name>
+        <servlet-class>staffpackage.StloginServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>StaffServlet</servlet-name>
         <url-pattern>/StaffServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StloginServlet</servlet-name>
+        <url-pattern>/StloginServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -182,10 +182,13 @@ public final class flightsdetails_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("                        <tr>\r\n");
       out.write("                            <td><input type=\"submit\" value=\"Edit\"/></td>\r\n");
       out.write("                            <td><input type=\"reset\" value=\"Back\"</td>\r\n");
+<<<<<<< HEAD
+=======
       out.write("                            <td><input class=\"bttn\" type=\"submit\" value=\"Edit\"/></td>\r\n");
       out.write("                            <td><form action=\"flights.html\" method=\"POST\">\r\n");
       out.write("                                    <input class=\"bttn\" type=\"submit\" value=\"Back\">\r\n");
       out.write("                                </form></td>\r\n");
+>>>>>>> 52dabca13a6bf5f0fe707414892e191c198e2f62
       out.write("                        </tr>\r\n");
       out.write("                           ");
  }
