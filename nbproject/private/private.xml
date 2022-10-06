@@ -2,13 +2,21 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-
-        <group/>
-
         <group>
-            <file>file:/D:/NSBM/2nd%20year/Y2%20S1/DEA/Project/AirlineController/web/AddCus.html</file>
-            <file>file:/D:/NSBM/2nd%20year/Y2%20S1/DEA/Project/AirlineController/web/StaffDash.html</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/src/java/Ass/addCusServlet.java</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/StaffDash.html</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/css/flight.css</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/AddCus.html</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/logstaff.html</file>
         </group>
-
+        <group>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/stafflogin.jsp</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/succlogin.jsp</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/StaffDash.html</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/css/flight.css</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/src/java/staffpackage/StloginServlet.java</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/logstaff.html</file>
+            <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/error.jsp</file>
+        </group>
     </open-files>
 </project-private>
