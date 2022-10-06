@@ -73,13 +73,13 @@ public class StloginServlet extends HttpServlet {
               if(stfname.equals(unameDB) && stpass.equals(passDB)){
                   System.out.println("inside IFF");
                   
-                  RequestDispatcher rd = request.getRequestDispatcher("");
+                  RequestDispatcher rd = request.getRequestDispatcher("succlogin.jsp");
                   rd.forward(request, response);
                   
               }else{
                   System.out.println("INSIDE ELSEE");
                   
-                  RequestDispatcher rd = request.getRequestDispatcher("");
+                  RequestDispatcher rd = request.getRequestDispatcher("error.jsp");
                   rd.forward(request, response);
               }
                 
