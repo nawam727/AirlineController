@@ -13,7 +13,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="css/flight.css">
+        <link rel="stylesheet" href="css/navbar.css">
     </head>
+    <center>
     <body>
         <h1>Successfully Account Deleted</h1>
         <%
@@ -35,7 +38,8 @@
                     }
         %>
         <form action="StaffDash.html">
-            <input type="submit" value="home">
+            <input class="bttn" type="submit" value="Home">
         </form>
     </body>
+    </center>
 </html>

@@ -14,6 +14,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="css/flight.css">
+        <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
         <div>
@@ -63,8 +65,8 @@
                         <td><input type="text" name="num" value='<%=rs.getInt("clvno")%>'></td>
                     </tr>
                     <tr>
-                        <td><center><input type="submit" value="save"></center></td>
-                        <td><center><input type="reset" value="clear"></center></td>
+                        <td><center><input class="bttn" type="submit" value="save"></center></td>
+                        <td><center><input class="bttn" type="reset" value="clear"></center></td>
                     </tr>
                       <% }
                     }
