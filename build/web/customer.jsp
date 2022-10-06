@@ -85,7 +85,7 @@
                             <td><%=rs.getInt("clvno")%></td>
                         </tr>
                         <tr>
-                            <td><input class="bttn" type="submit" value="edit"/></td>
+                            <td><input class="bttn" type="submit" value="Edit"/></td>
                             <td><input class="bttn" type="submit" value="Back"></td>
                             
                             <td><form action="StaffDash.html" method="POST">
