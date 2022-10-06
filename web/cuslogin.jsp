@@ -14,9 +14,18 @@
         <link rel="stylesheet" href="css/flight.css">
     </head>
     <body>
-        <br><br><br><br>
-        <h1>Login</h1>
+        <center>
+                <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="">Tickets</a>
+                <a href="">Flights</a>
+                <a href="cuslogin.jsp">Sign In</a>
+                <a href="AddCus.html">Sign Up</a>
+                </div> 
+            </center>
+        <br><br><br>
     <center>
+        <h1>Login</h1>
         <form action="cuslogServlet" method="POST">
               <table border="0">
                     <tr>
@@ -28,7 +37,7 @@
                     </tr>
                 
                     <tr> 
-                        <td><br><center><input type="submit" value="Log In" /></center></td>  
+                        <td><br><center><input class="bttn" type="submit" value="Log In" /></center></td>  
                     </tr>
                     
                </table>

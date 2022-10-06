@@ -14,6 +14,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <h3>
+            <center>
+
+
         <link rel="stylesheet" href="css/flight.css">
         <link rel="stylesheet" href="css/navbar.css">
     </head>
@@ -35,12 +45,13 @@
     
     <br>
             <center>
+                <form action="editflight.jsp">
                 <table border="0">
                     <th>
-                       Results for Flight Id :
+                       Results for Flight Id : 
                         <%=request.getParameter("txtflId")%>
                     </th>
-                    <tr></tr>
+                   
                 <%
                     try
                     {
@@ -51,6 +62,7 @@
                         Statement st= con.createStatement();
                         
                         int fliId= Integer.parseInt(request.getParameter("txtflId"));
+                        session.setAttribute("flId", fliId);
                         String query="Select * from flights where flightId='"+fliId+"'";
                         ResultSet rs=st.executeQuery(query);
                         while(rs.next())
@@ -102,14 +114,8 @@
                         </tr>
                         <tr>
 
-                            <td><input type="submit" value="Edit"/></td>
-                            <td><input type="reset" value="Back"</td>
-
-                            <td><input class="bttn" type="submit" value="Edit"/></td>
-                            <td><form action="flights.html" method="POST">
-                                    <input class="bttn" type="submit" value="Back">
-                                </form></td>
-
+                            <td><input type="submit" value="Edit"/> </td>
+                            <td><input type="submit" value="Back"></td>
                         </tr>
                            <% }
                     }
@@ -119,6 +125,10 @@
                     }
                       %>
                 </table>
+               </form>
+                <form action="deleteflight.jsp">
+                    <input type="submit" value="delete" />
+                </form>
             </center>
         </h3>
     </body>
