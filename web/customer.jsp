@@ -16,9 +16,24 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="css/flight.css">
+        <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
-            
+
+
+        <center>
+                <div class="topnav">
+                <a class="active" href="StaffDash.html">Home</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="flights.html">Flights</a>
+                <a href="#about">Sign In</a>
+                <a href="#about">Sign Up</a>
+                </div> 
+            </center>
+        <br>
+        <br>
+        <br>
             <h3> 
                 <center>
                     <form action="edit.jsp" method="post">
@@ -70,9 +85,13 @@
                             <td><%=rs.getInt("clvno")%></td>
                         </tr>
                         <tr>
-                            <td><input type="submit" value="edit"/></td>
-                            <td><input type="reset" value="back"</td>
+                            <td><input class="bttn" type="submit" value="edit"/></td>
+                            <td><input class="bttn" type="submit" value="Back"></td>
                             
+                            <td><form action="StaffDash.html" method="POST">
+                                    
+                                </form></td>
+
                         </tr>
                         <% }
                     }

@@ -9,9 +9,21 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/flight.css">
     </head>
     <body>
-    
+        <div>
+            <center>
+                <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="#news">Tickets</a>
+                <a href="">Flights</a>
+                <a href="#about">Sign In</a>
+                <a href="AddCus.html">Sign Up</a>
+                </div> 
+            </center>
+        </div>
         <div>
             <center>
             <h2>Creating a Account</h2>
@@ -23,19 +35,19 @@ and open the template in the editor.
                     </tr>
                     <tr>
                         <td>Last name</td>
-                        <td><input type="text" name="txtlname"/></td>
+                        <td><input type="text" name="txtlnames"/></td>
                     </tr>
                     <tr>
                         <td>Email</td>
                         <td><input type="text" name="txtemail"/></td>
                     </tr>
                     <tr>
-                        <td>password</td>
+                        <td>Password</td>
                         <td><input type="password" name="txtpass" value="" /></td>
                     </tr>
                     <tr>
-                        <td><input type="submit" value="Create Account" /></td>
-                        <td><input type="reset" value="Clear"/></td>
+                        <td><input class="bttn" type="submit" value="Create Account" /></td>
+                        <td><input class="bttn" type="reset" value="Clear"/></td>
                     </tr>
                 </table>
             </form>

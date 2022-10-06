@@ -71,6 +71,31 @@ public final class flightsdetails_jsp extends org.apache.jasper.runtime.HttpJspB
       out.print(request.getParameter("txtflId"));
       out.write("\r\n");
       out.write("                    </th>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/flight.css\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/navbar.css\">\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <center>\r\n");
+      out.write("                <div class=\"topnav\">\r\n");
+      out.write("                <a class=\"active\" href=\"StaffDash.html\">Home</a>\r\n");
+      out.write("                <a href=\"tickets.html\">Tickets</a>\r\n");
+      out.write("                <a href=\"flights.html\">Flights</a>\r\n");
+      out.write("                <a href=\"#about\">Sign In</a>\r\n");
+      out.write("                <a href=\"#about\">Sign Up</a>\r\n");
+      out.write("                </div> \r\n");
+      out.write("            </center>\r\n");
+      out.write("    <br>\r\n");
+      out.write("    <br>\r\n");
+      out.write("    <br>\r\n");
+      out.write("            <center>\r\n");
+      out.write("                <table border=\"0\">\r\n");
+      out.write("                    <th>\r\n");
+      out.write("                       Results for Flight Id :\r\n");
+      out.write("                        ");
+      out.print(request.getParameter("txtflId"));
+      out.write("\r\n");
+      out.write("                    </th>\r\n");
+      out.write("                    <tr></tr>\r\n");
       out.write("                ");
 
                     try
@@ -157,6 +182,13 @@ public final class flightsdetails_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("                        <tr>\r\n");
       out.write("                            <td><input type=\"submit\" value=\"Edit\"/></td>\r\n");
       out.write("                            <td><input type=\"reset\" value=\"Back\"</td>\r\n");
+<<<<<<< HEAD
+=======
+      out.write("                            <td><input class=\"bttn\" type=\"submit\" value=\"Edit\"/></td>\r\n");
+      out.write("                            <td><form action=\"flights.html\" method=\"POST\">\r\n");
+      out.write("                                    <input class=\"bttn\" type=\"submit\" value=\"Back\">\r\n");
+      out.write("                                </form></td>\r\n");
+>>>>>>> 52dabca13a6bf5f0fe707414892e191c198e2f62
       out.write("                        </tr>\r\n");
       out.write("                           ");
  }

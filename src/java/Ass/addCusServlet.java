@@ -71,7 +71,11 @@ public class addCusServlet extends HttpServlet {
             String Pass=request.getParameter("txtpass");
             Customer a=new Customer();
             a.addCus(Fname,Lname,Email,Pass);
-            response.sendRedirect("index.html");
+
+          //  response.sendRedirect("index.html");
+
+            //response.sendRedirect("index.html");
+
     }
 
     /**
