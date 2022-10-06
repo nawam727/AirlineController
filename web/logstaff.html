@@ -9,9 +9,20 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/flight.css">
+        
     </head>
     <body>
-        <br><br><br><br>
+        <center>
+                <div class="topnav">
+                <a class="active" href="StaffDash.html">Home</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="flights.html">Flights</a>
+                <a href="#about">Sign In</a>
+                <a href="logstaff.html">Sign Up</a>
+                </div> 
+            </center>
     <center>
         <h1>Staff Registration</h1>
         <form action="StaffServlet" method="POST">
@@ -42,7 +53,7 @@ and open the template in the editor.
                         <td><input type="text" name="smno"  placeholder="Mobile Number" /></td> 
                     </tr>
                     <tr> 
-                        <td><br><center><input type="submit" value="Create an Account" /></center></td>  
+                        <td><br><center><input class="bttn" type="submit" value="Create an Account" /></center></td>  
                     </tr>
                     
             </table>
