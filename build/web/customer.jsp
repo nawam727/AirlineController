@@ -1,8 +1,10 @@
 <%-- 
     Document   : customer
-    Created on : Oct 1, 2022, 6:54:34 PM
+    Created on : Sep 30, 2022, 9:40:07 AM
     Author     : navee
 --%>
+
+
 
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
@@ -18,6 +20,8 @@
         <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
+
+
         <center>
                 <div class="topnav">
                 <a class="active" href="StaffDash.html">Home</a>
@@ -32,13 +36,12 @@
         <br>
             <h3> 
                 <center>
+                    <form action="edit.jsp" method="post">
                 <table boder="0">
                     <th>
-                        Results for client Id :
+                        results for client Id 
                         <%=request.getParameter("txtcusId")%> 
                     </th>
-                    <tr></tr>
-                    <tr></tr>
                 <%
                     try
                     {
@@ -49,12 +52,14 @@
                         Statement st= con.createStatement();
                         
                         int cusId= Integer.parseInt(request.getParameter("txtcusId"));
+                        session.setAttribute("CID",cusId);
+                        
                         String query="Select * from client where clientId='"+cusId+"'";
                         ResultSet rs=st.executeQuery(query);
                         while(rs.next())
                         {
                         %>
-                    
+                
                         <tr>
                             <td>User Id</td>
                             <td><%=rs.getInt("clientId")%></td>
@@ -81,9 +86,12 @@
                         </tr>
                         <tr>
                             <td><input class="bttn" type="submit" value="edit"/></td>
+                            <td><input class="bttn" type="submit" value="Back"></td>
+                            
                             <td><form action="StaffDash.html" method="POST">
-                                    <input class="bttn" type="submit" value="Back">
+                                    
                                 </form></td>
+
                         </tr>
                         <% }
                     }
@@ -93,7 +101,11 @@
                     }
                       %>
                 </table>
-        </center>
+                    </form>
+                </center>
+           <form action="delete.jsp">   
+                    <input type="submit" value="delete">
+               </form>  
         </h3>
     </body>
 </html>
