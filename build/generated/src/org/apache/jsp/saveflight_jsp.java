@@ -7,7 +7,7 @@ import java.sql.Statement;
 import java.sql.DriverManager;
 import java.sql.Connection;
 
-public final class save_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class saveflight_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -55,16 +55,14 @@ public final class save_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
       out.write("        <title>JSP Page</title>\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"css/flight.css\">\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"css/navbar.css\">\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("    <center>\r\n");
-      out.write("        <h3>Data Saved</h3>\r\n");
-      out.write("                        ");
- 
-                   String cusId=session.getAttribute("CID").toString();
-                   int a=Integer.parseInt(cusId);
+      out.write("        <h1>Date Saved</h1>\r\n");
+      out.write("                                \r\n");
+      out.write("                    ");
+
+                        String flId=session.getAttribute("flId").toString();
+                   int a=Integer.parseInt(flId);
                    try
                     {
                         Class.forName("com.mysql.jdbc.Driver");
@@ -73,27 +71,47 @@ public final class save_jsp extends org.apache.jasper.runtime.HttpJspBase
                         
                         Statement st= con.createStatement();
                         
-                        String Fname=request.getParameter("fname");
+                        String p1=request.getParameter("cptname");
                
-                        String sql1="UPDATE client SET cfname='"+Fname+"' where clientId='"+a+"'";
+                        String sql1="UPDATE flights SET pilot1='"+p1+"' where flightId='"+a+"'";
                         st.executeUpdate(sql1);
                         
-                        String Lname=request.getParameter("lname");
+                        String p2=request.getParameter("txtpilot2");
                         
-                        String sql2="UPDATE client SET clname='"+Lname+"' where clientId='"+a+"'";
+                        String sql2="UPDATE flights SET pilot2='"+p2+"' where flightId='"+a+"'";
                         st.executeUpdate(sql2);
                         
-                        String Email=request.getParameter("mail");
-                        String sql3="UPDATE client SET clemail='"+Email+"' where clientId='"+a+"'";
+                        String p3=request.getParameter("arrTime");
+                        String sql3="UPDATE flights SET arriTime='"+p3+"' where flightId='"+a+"'";
                          st.executeUpdate(sql3);
                          
-                         String Pass=request.getParameter("pwd");
-                        String sql4="UPDATE client SET clpass='"+Pass+"' where clientId='"+a+"'";
+                         String P4=request.getParameter("depTime");
+                        String sql4="UPDATE flights SET depTime='"+P4+"' where flightId='"+a+"'";
                         st.executeUpdate(sql4);
                         
-                        int VNo=Integer.parseInt(request.getParameter("num"));
-                        String sql5="UPDATE client SET clvno='"+VNo+"' where clientId='"+a+"'";
-                         st.executeUpdate(sql5);
+                        String P5=request.getParameter("arrDate");
+                        String sql5="UPDATE flights SET arriDate='"+P5+"' where flightId='"+a+"'";
+                        st.executeUpdate(sql5);
+                        
+                        String P6=request.getParameter("depDate");
+                        String sql6="UPDATE flights SET depDate='"+P6+"' where flightId='"+a+"'";
+                        st.executeUpdate(sql6);
+                        
+                        String P7=request.getParameter("txtarrAir");
+                        String sql7="UPDATE flights SET arriAirport='"+P7+"' where flightId='"+a+"'";
+                        st.executeUpdate(sql7);
+                        
+                        String P8=request.getParameter("txtdepAir");
+                        String sql8="UPDATE flights SET depAir='"+P8+"' where flightId='"+a+"'";
+                        st.executeUpdate(sql8);
+                        
+                        int p9=Integer.parseInt(request.getParameter("NOS"));
+                        String sql9="UPDATE flights SET SeatCount='"+p9+"' where flightId='"+a+"'";
+                         st.executeUpdate(sql9);
+                         
+                         int p10=Integer.parseInt(request.getParameter("NOA"));
+                        String sql10="UPDATE flights SET avaiSeat='"+p10+"' where flightId='"+a+"'";
+                         st.executeUpdate(sql10);
                    
                     }
                       catch(Exception e)
@@ -102,10 +120,9 @@ public final class save_jsp extends org.apache.jasper.runtime.HttpJspBase
                     }
                       
       out.write("\r\n");
-      out.write("                      <form action=\"StaffDash.html\">\r\n");
-      out.write("                          <input class=\"bttn\" type=\"submit\" value=\"Home\"/>\r\n");
+      out.write("                      <form action=\"adflights.html\">\r\n");
+      out.write("                          <input type=\"submit\" value=\"home\"/>\r\n");
       out.write("                      </form>\r\n");
-      out.write("    </center>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
