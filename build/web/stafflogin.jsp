@@ -14,16 +14,18 @@
         <title>JSP Page</title>
     </head>
     <body>
-         <center>
+        
+        <center>
                 <div class="topnav">
-                <a class="active" href="StaffDash.html">Home</a>
+                <a class="active" href="index.html">Home</a>
                 <a href="tickets.html">Tickets</a>
                 <a href="flights.html">Flights</a>
-                <a href="#about">Sign In</a>
+                <a href="stafflogin.jsp">Sign In</a>
                 <a href="logstaff.html">Sign Up</a>
                 </div> 
-        </center>
-     <br><br><br>
+            </center>
+        <br><br><br><br>
+        
         <center>
           <h1>Login</h1>
            <form action="StloginServlet" method="POST">
