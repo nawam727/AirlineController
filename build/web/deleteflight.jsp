@@ -1,7 +1,7 @@
 <%-- 
     Document   : delete
-    Created on : Oct 6, 2022, 2:17:51 AM
-    Author     : navee
+    Created on : Oct 6, 2022, 5:06:44 PM
+    Author     : Expert Book
 --%>
 
 <%@page import="java.sql.Statement"%>
@@ -13,22 +13,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" href="css/flight.css">
-        <link rel="stylesheet" href="css/navbar.css">
     </head>
-    <center>
     <body>
         <h1>Successfully Account Deleted</h1>
         <%
-                   String cusId=session.getAttribute("CID").toString();
-                   int a=Integer.parseInt(cusId);
+                   String FID=session.getAttribute("flId").toString();
+                   int a=Integer.parseInt(FID);
                    try
                     {
                         Class.forName("com.mysql.jdbc.Driver");
                         String url="jdbc:mysql://localhost:3306/testair";
                         Connection con=DriverManager.getConnection(url, "root","");
                         Statement st= con.createStatement();
-                        String sql="DELETE FROM client WHERE clientId='"+a+"'";
+                        String sql="DELETE FROM flights WHERE flightId='"+a+"'";
                         st.executeUpdate(sql);
 
                     }
@@ -37,9 +34,8 @@
                         System.out.println(e.getMessage());
                     }
         %>
-        <form action="StaffDash.html">
-            <input class="bttn" type="submit" value="Home">
+        <form action="adflights.html">
+            <input type="submit" value="home">
         </form>
     </body>
-    </center>
 </html>

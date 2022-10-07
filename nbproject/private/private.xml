@@ -2,7 +2,9 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group/>
         <group>
+<<<<<<< HEAD
             <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/src/java/Ass/addCusServlet.java</file>
             <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/staff.html</file>
             <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/css/flight.css</file>
@@ -25,6 +27,24 @@
             <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/src/java/staffpackage/StloginServlet.java</file>
             <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/logstaff.html</file>
             <file>file:/D:/Others/SE%20Modules/2-%20Year/1%20-%20Sem/Development%20of%20Enterprice%20App%201/Group%20assinment/project/AirlineController/web/error.jsp</file>
+=======
+
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/New%20folder/AirlineController/web/adflights.html</file>
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/New%20folder/AirlineController/web/stafflogin.jsp</file>
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/New%20folder/AirlineController/web/cuslogin.jsp</file>
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/New%20folder/AirlineController/web/StaffDash.html</file>
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/New%20folder/AirlineController/web/AddCus.html</file>
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/New%20folder/AirlineController/web/index.html</file>
+            <file>file:/D:/NSBM%20Lecture%20Contents/2nd%20year/1st%20sem/DEA/New%20folder/AirlineController/web/css/flight.css</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/flights.html</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/deleteflight.jsp</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/nbproject/build-impl.xml</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/adflights.html</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/editflight.jsp</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/flightsdetails.jsp</file>
+            <file>file:/D:/Y2S1/DEA/Project/AirlineController/web/saveflight.jsp</file>
+
+>>>>>>> aa47414353b599ee6b95de140f747e93848c7c9b
         </group>
     </open-files>
 </project-private>
