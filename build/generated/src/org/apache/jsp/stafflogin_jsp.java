@@ -66,11 +66,8 @@ public final class stafflogin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </div> \r\n");
       out.write("            </center>\r\n");
       out.write("\r\n");
-      out.write("        <br><br><br><br>\r\n");
-      out.write("        \r\n");
-      out.write("\r\n");
-      out.write("        <br><br>\r\n");
-      out.write("\r\n");
+      out.write("<!-- header section -->  \r\n");
+      out.write("    <header class=\"hero-section-1\">\r\n");
       out.write("        <center>\r\n");
       out.write("          <h1>Login</h1>\r\n");
       out.write("            <form action=\"StloginServlet\" method=\"POST\">\r\n");
@@ -90,6 +87,7 @@ public final class stafflogin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("               </table>\r\n");
       out.write("           </form>\r\n");
       out.write("       </center>\r\n");
+      out.write("    </header>\r\n");
       out.write("        \r\n");
       out.write("               <!-- footer  -->\r\n");
       out.write("                 \r\n");
