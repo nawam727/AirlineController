@@ -3,12 +3,8 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.sql.DriverManager;
-import java.sql.Connection;
 
-public final class flightInfo_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class succlogin_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -48,129 +44,35 @@ public final class flightInfo_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css\"> <!-- social media icons link-->\r\n");
-      out.write(" <link rel=\"stylesheet\" href=\"css/navbar.css\">    <!-- nav bar css link -->\r\n");
-      out.write(" <link rel=\"stylesheet\" href=\"css/flight.css\">     <!-- css link --> \r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/navbar.css\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/flight.css\">\r\n");
+      out.write("         <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css\"> <!-- social media icons link-->\r\n");
+      out.write("\r\n");
       out.write("        <title>JSP Page</title>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("        \r\n");
-      out.write("        \r\n");
-      out.write("         <!-- header section -->  \r\n");
+      out.write("        <center>\r\n");
+      out.write("                <div class=\"topnav\">\r\n");
+      out.write("                <a class=\"active\" href=\"index.html\">Home</a>\r\n");
+      out.write("                <a href=\"#news\">Tickets</a>\r\n");
+      out.write("                <a href=\"\">Flights</a>\r\n");
+      out.write("                <a href=\"stafflogin.jsp\">Sign In</a>\r\n");
+      out.write("                <a href=\"AddCus.html\">Sign Up</a>\r\n");
+      out.write("                </div> \r\n");
+      out.write("         </center>\r\n");
+      out.write("           <!-- header section -->  \r\n");
       out.write("    <header class=\"hero-section\">\r\n");
-      out.write("        <div>\r\n");
+      out.write("\r\n");
+      out.write("          <center>\r\n");
+      out.write("              <h1>Welcome to the Phoenix Airline.</h1>\r\n");
+      out.write("          </center>\r\n");
+      out.write("    </header>\r\n");
       out.write("           \r\n");
-      out.write("                \r\n");
-      out.write("                ");
-
-                    
-                    String DepAir=request.getParameter("txtDeptAir");
-                    String ArrAir=request.getParameter("txtArrAir");
-                    String DepDate=request.getParameter("DDate");
-                    String ArrDate=request.getParameter("ADate");
-                    try{
-                Class.forName("com.mysql.jdbc.Driver");
-                        String url="jdbc:mysql://localhost:3306/testair";
-                        Connection con=DriverManager.getConnection(url, "root","");
-                Statement st= con.createStatement();
-                String sql="SELECT flightId,arriTime,arriDate,arriAirport,depTime,depDate,depAir,avaiSeat,price FROM flights where depAir='"+DepAir+"' && arriAirport='"+ArrAir+"' && depDate='"+DepDate+"' || arriDate='"+ArrDate+"'";
-                ResultSet rs=st.executeQuery(sql);
-                while(rs.next())
-                {
-                
-      out.write("\r\n");
-      out.write("                \r\n");
-      out.write("                <form action=\"Booking.jsp\" method=\"post\">\r\n");
-      out.write("                <table border=\"0\">\r\n");
-      out.write("                    <th><center>take off from ");
-      out.print(request.getParameter("txtDeptAir"));
-      out.write("</center></th>\r\n");
-      out.write("                    <th> to ");
-      out.print(request.getParameter("txtArrAir"));
-      out.write("</th>\r\n");
-      out.write("                <tr>\r\n");
-      out.write("                    <td>Flight ID</td>\r\n");
-      out.write("                    <td>");
-      out.print(rs.getInt("flightId"));
-      out.write("</td>\r\n");
-      out.write("                </tr>\r\n");
-      out.write("                <tr>\r\n");
-      out.write("                    <td>Departure Airport</td>\r\n");
-      out.write("                    <td>");
-      out.print(rs.getString("depAir"));
-      out.write("</td>\r\n");
-      out.write("                </tr>\r\n");
-      out.write("                <tr>\r\n");
-      out.write("                <td>Arrival Airport</td>\r\n");
-      out.write("                <td>");
-      out.print(rs.getString("arriAirport"));
-      out.write("</td>\r\n");
-      out.write("                </tr>\r\n");
-      out.write("                <tr>\r\n");
-      out.write("                    <td>Departure Date</td>\r\n");
-      out.write("                    <td>");
-      out.print(rs.getString("depDate"));
-      out.write("</td>\r\n");
-      out.write("                </tr>\r\n");
-      out.write("                <tr>\r\n");
-      out.write("                    <td>Arrival Date</td>\r\n");
-      out.write("                    <td>");
-      out.print(rs.getString("arriDate"));
-      out.write("</td>\r\n");
-      out.write("                </tr>\r\n");
-      out.write("                <tr>\r\n");
-      out.write("                    <td>Departure Time</td>\r\n");
-      out.write("                    <td>");
-      out.print(rs.getString("depTime"));
-      out.write("</td>\r\n");
-      out.write("                </tr>\r\n");
-      out.write("                <tr>\r\n");
-      out.write("                    <td>Arrival time</td>\r\n");
-      out.write("                    <td>");
-      out.print(rs.getString("arriTime"));
-      out.write("</td>\r\n");
-      out.write("                </tr>\r\n");
-      out.write("                <tr>\r\n");
-      out.write("                    <td>Available Seat</td>\r\n");
-      out.write("                    <td>");
-      out.print(rs.getString("avaiSeat"));
-      out.write("</td>\r\n");
-      out.write("                </tr>       \r\n");
-      out.write("               \r\n");
-      out.write("                <tr>\r\n");
-      out.write("                    <td>\r\n");
-      out.write("                        <input type=\"submit\" value=\"book\" /> \r\n");
-      out.write("                        </td>\r\n");
-      out.write("                    <td> \r\n");
-      out.write("                    </td>\r\n");
-      out.write("                </tr>\r\n");
-      out.write("                </table>\r\n");
-      out.write("                </form>\r\n");
-      out.write("                <p><font color=\"red\">*</font>Please remember the flight Id</p>\r\n");
-      out.write("                <p><font color=\"red\">*</font>You need to log into the your account before booking</p>\r\n");
-      out.write("                <br/>\r\n");
-      out.write("                ");
- }
-                    }
-                      catch(Exception e)
-                    {
-                        System.out.println(e.getMessage());
-                    }
-
-      out.write("\r\n");
-      out.write("            </div>\r\n");
-      out.write("    </header> \r\n");
-      out.write("            \r\n");
-      out.write("      \r\n");
-      out.write("       <!-- footer  -->\r\n");
+      out.write("                  <!-- footer  -->\r\n");
       out.write("                 \r\n");
       out.write("          <div class=\"footer\">            \r\n");
       out.write("            <div class=\"footer-clean\">\r\n");
@@ -239,9 +141,8 @@ public final class flightInfo_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </footer>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div> \r\n");
-      out.write("      \r\n");
       out.write("    </body>\r\n");
-      out.write("</html>");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
