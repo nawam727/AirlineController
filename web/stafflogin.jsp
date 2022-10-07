@@ -16,28 +16,16 @@
         <link rel="stylesheet" href="css/flight.css">
     </head>
     <body>
-<<<<<<< HEAD
-        
-        <center>
-                <div class="topnav">
-                <a class="active" href="index.html">Home</a>
-=======
         <center>
                 <div class="topnav">
                 <a class="active" href="StaffDash.html">Home</a>
->>>>>>> aa47414353b599ee6b95de140f747e93848c7c9b
                 <a href="tickets.html">Tickets</a>
                 <a href="flights.html">Flights</a>
                 <a href="stafflogin.jsp">Sign In</a>
                 <a href="logstaff.html">Sign Up</a>
                 </div> 
             </center>
-<<<<<<< HEAD
-        <br><br><br><br>
-        
-=======
-        <br><br>
->>>>>>> aa47414353b599ee6b95de140f747e93848c7c9b
+        <br><br><br>
         <center>
           <h1>Login</h1>
            <form action="StloginServlet" method="POST">
