@@ -1,0 +1,12 @@
+SMAP
+deleteTicket_jsp.java
+JSP
+*S JSP
+*F
++ 0 deleteTicket.jsp
+deleteTicket.jsp
+*L
+5,17:47
+22,17:65
+38,7:82
+*E
