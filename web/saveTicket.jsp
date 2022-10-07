@@ -13,15 +13,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" href="css/flight.css">
-        <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
-    <center>
-        <h3>Data Saved</h3>
+        <h3>data saved</h3>
                         <% 
-                   String cusId=session.getAttribute("CID").toString();
-                   int a=Integer.parseInt(cusId);
+                   String tId=session.getAttribute("tick").toString();
+                   int a=Integer.parseInt(tId);
                    try
                     {
                         Class.forName("com.mysql.jdbc.Driver");
@@ -30,37 +27,39 @@
                         
                         Statement st= con.createStatement();
                         
-                        String Fname=request.getParameter("fname");
+                        String a1=request.getParameter("txtdDate");
                
-                        String sql1="UPDATE client SET cfname='"+Fname+"' where clientId='"+a+"'";
+                        String sql1="UPDATE tickets SET depDate='"+a1+"' where ticketID='"+a+"'";
                         st.executeUpdate(sql1);
                         
-                        String Lname=request.getParameter("lname");
+                        String a2=request.getParameter("txtdTime");
                         
-                        String sql2="UPDATE client SET clname='"+Lname+"' where clientId='"+a+"'";
+                        String sql2="UPDATE tickets SET depTime='"+a2+"' where ticketID='"+a+"'";
                         st.executeUpdate(sql2);
                         
-                        String Email=request.getParameter("mail");
-                        String sql3="UPDATE client SET clemail='"+Email+"' where clientId='"+a+"'";
+                        String a3=request.getParameter("txtPrice");
+                        String sql3="UPDATE tickets SET price='"+a3+"' where ticketID='"+a+"'";
                          st.executeUpdate(sql3);
                          
-                         String Pass=request.getParameter("pwd");
-                        String sql4="UPDATE client SET clpass='"+Pass+"' where clientId='"+a+"'";
+                         String a4=request.getParameter("SN");
+                        String sql4="UPDATE tickets SET seatNo='"+a4+"' where ticketID='"+a+"'";
                         st.executeUpdate(sql4);
                         
-                        int VNo=Integer.parseInt(request.getParameter("num"));
-                        String sql5="UPDATE client SET clvno='"+VNo+"' where clientId='"+a+"'";
-                         st.executeUpdate(sql5);
-                   
+                        String a5=request.getParameter("txtclass");
+                        String sql5="UPDATE tickets SET class='"+a5+"' where ticketID='"+a+"'";
+                        st.executeUpdate(sql5);
+                        
+                        int no=Integer.parseInt(request.getParameter("txtNOP"));
+                        String sql6="UPDATE tickets SET NOP='"+no+"' where ticketID='"+a+"'";
+                        st.executeUpdate(sql6);
                     }
                       catch(Exception e)
                     {
                         System.out.println(e.getMessage());
                     }
                       %>
-                      <form action="StaffDash.html">
-                          <input class="bttn" type="submit" value="Home"/>
+                      <form action="tickets.html">
+                          <input type="submit" value="home"/>
                       </form>
-    </center>
     </body>
 </html>

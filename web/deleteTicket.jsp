@@ -16,19 +16,18 @@
         <link rel="stylesheet" href="css/flight.css">
         <link rel="stylesheet" href="css/navbar.css">
     </head>
-    <center>
     <body>
         <h1>Successfully Account Deleted</h1>
         <%
-                   String cusId=session.getAttribute("CID").toString();
-                   int a=Integer.parseInt(cusId);
+                   String tickId=session.getAttribute("tic").toString();
+                   int a=Integer.parseInt(tickId);
                    try
                     {
                         Class.forName("com.mysql.jdbc.Driver");
                         String url="jdbc:mysql://localhost:3306/testair";
                         Connection con=DriverManager.getConnection(url, "root","");
                         Statement st= con.createStatement();
-                        String sql="DELETE FROM client WHERE clientId='"+a+"'";
+                        String sql="DELETE FROM tickets WHERE ticketID='"+a+"'";
                         st.executeUpdate(sql);
 
                     }
@@ -37,9 +36,8 @@
                         System.out.println(e.getMessage());
                     }
         %>
-        <form action="StaffDash.html">
+        <form action="tickets.html">
             <input class="bttn" type="submit" value="Home">
         </form>
     </body>
-    </center>
 </html>

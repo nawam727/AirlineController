@@ -20,11 +20,11 @@
     <body>
         <div>
             <center>
-                <h1>Edit Passenger Accounts</h1>
+                <h1>Edit Ticket Details</h1>
                 
                 <% 
-                   String cusId=session.getAttribute("CID").toString();
-                   int a=Integer.parseInt(cusId);
+                   String tickId=session.getAttribute("tic").toString();
+                   int t=Integer.parseInt(tickId);
                    try
                     {
                         Class.forName("com.mysql.jdbc.Driver");
@@ -33,40 +33,45 @@
                         
                         Statement st= con.createStatement();
              
-                        String query="Select * from client where clientId='"+a+"'";
+                        String query="Select * from tickets where ticketID='"+t+"'";
+                        session.setAttribute("tick",t);
                         ResultSet rs=st.executeQuery(query);
                         while(rs.next())
                         {
                 %>
                 
-            <form action="save.jsp" method="post">
-                <h4>Passenger ID <%=rs.getInt("clientId")%></h4>
-                <% session.setAttribute("CID",cusId); %>
+            <form action="saveTicket.jsp" method="post">
+                <h4>Ticket ID <%=rs.getInt("ticketID")%></h4>
+                
                 <table border="0">
                     <tr>
-                        <td>First name</td>
-                        <td><input type="text" name="fname" value='<%=rs.getString("cfname")%>'></td>
+                        <td>Departure Date</td>
+                        <td><input type="text" name="txtdDate" value='<%=rs.getString("depDate")%>'/></td>
                     </tr>
                     
                     <tr>
-                        <td>Last name</td>
-                        <td><input type="text" name="lname" value='<%=rs.getString("clname")%>'></td>
+                        <td>Departure Time</td>
+                        <td><input type="text" name="txtdTime" value='<%=rs.getString("depTime")%>'/></td>
                     </tr>
                     <tr>
-                        <td>Email</td>
-                        <td><input type="text" name="mail" value='<%=rs.getString("clemail")%>'></td>
+                        <td>Price</td>
+                        <td><input type="text" name="txtPrice" value='<%=rs.getInt("price")%>'/></td>
                     </tr>
                     <tr>
-                        <td>Password</td>
-                        <td><input type="password" name="pwd" value='<%=rs.getString("clpass")%>'></td>
+                        <td>Seat Number</td>
+                        <td><input type="text" name="SN" value='<%=rs.getInt("seatNo")%>'/></td>
                     </tr> 
                     <tr>
-                        <td>Vaccine Card number</td>
-                        <td><input type="text" name="num" value='<%=rs.getInt("clvno")%>'></td>
+                        <td>Class</td>
+                        <td><input type="text" name="txtclass" value='<%=rs.getString("class")%>'/></td>
                     </tr>
                     <tr>
-                        <td><center><input class="bttn" type="submit" value="save"></center></td>
-                        <td><center><input class="bttn" type="reset" value="clear"></center></td>
+                        <td>Number of passengers</td>
+                        <td><input type="text" name="txtNOP" value='<%=rs.getInt("NOP")%>'/></td>
+                    </tr>
+                    <tr>
+                        <td><center><input class="bttn" type="submit" value="Save"></center></td>
+                <td><center><input class="bttn" type="reset" value="Clear"></center></td>
                     </tr>
                       <% }
                     }
