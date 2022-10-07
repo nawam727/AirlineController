@@ -83,9 +83,10 @@ public class fAddServlet extends HttpServlet {
         String dAir=request.getParameter("txtDAir");
         int SC=Integer.parseInt(request.getParameter("txtSC"));
         int ASC=Integer.parseInt(request.getParameter("textAvaS"));
+        int Price=Integer.parseInt(request.getParameter("price"));
         
         flight x=new flight();
-        x.addNewFlight(pilot1Name,pilot2Name,aTime,aDate,aAir,dTime,dDate,dAir,SC,ASC);
+        x.addNewFlight(pilot1Name,pilot2Name,aTime,aDate,aAir,dTime,dDate,dAir,SC,ASC,Price);
         response.sendRedirect("flightSucc.html");
     }
 

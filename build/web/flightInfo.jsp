@@ -30,7 +30,7 @@
                         String url="jdbc:mysql://localhost:3306/testair";
                         Connection con=DriverManager.getConnection(url, "root","");
                 Statement st= con.createStatement();
-                String sql="SELECT flightId,arriTime,arriDate,arriAirport,depTime,depDate,depAir,avaiSeat FROM flights where depAir='"+DepAir+"' && arriAirport='"+ArrAir+"' && depDate='"+DepDate+"' || arriDate='"+ArrDate+"'";
+                String sql="SELECT flightId,arriTime,arriDate,arriAirport,depTime,depDate,depAir,avaiSeat,price FROM flights where depAir='"+DepAir+"' && arriAirport='"+ArrAir+"' && depDate='"+DepDate+"' || arriDate='"+ArrDate+"'";
                 ResultSet rs=st.executeQuery(sql);
                 while(rs.next())
                 {
@@ -71,8 +71,8 @@
                 <tr>
                     <td>Available Seat</td>
                     <td><%=rs.getString("avaiSeat")%></td>
-                </tr>
-
+                </tr>       
+               
                 <tr>
                     <td>
                         <input type="submit" value="book" /> 
