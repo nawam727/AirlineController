@@ -14,21 +14,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-
-    </head>
-    <body>
-        <br>
-        <br>
-        <br>
-        <h3>
-            <center>
-
-
         <link rel="stylesheet" href="css/flight.css">
         <link rel="stylesheet" href="css/navbar.css">
-    </head>
-    <body>
-        <h3>
     </head>
     <body>
         <center>
@@ -44,6 +31,7 @@
     <br>
     
     <br>
+    <h3>
             <center>
                 <form action="editflight.jsp">
                 <table border="0">
@@ -114,8 +102,8 @@
                         </tr>
                         <tr>
 
-                            <td><input type="submit" value="Edit"/> </td>
-                            <td><input type="submit" value="Back"></td>
+                            <td><input class="bttn" type="submit" value="Edit"/> </td>
+                            <td><input class="bttn" type="submit" value="Back"></td>
                         </tr>
                            <% }
                     }
@@ -127,7 +115,7 @@
                 </table>
                </form>
                 <form action="deleteflight.jsp">
-                    <input type="submit" value="delete" />
+                    <input class="bttn" type="submit" value="delete" />
                 </form>
             </center>
         </h3>

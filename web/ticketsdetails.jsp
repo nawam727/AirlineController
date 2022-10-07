@@ -29,8 +29,16 @@
             </center>
             
                         
+<<<<<<< HEAD
                             
                     <center> <h3> Results for Flight Id :<%=request.getParameter("txttkId")%></h3></center>
+=======
+                    <th>
+                        Results for Flight Id :
+                        <%=request.getParameter("txttkId")%>
+                    </th>
+                                
+>>>>>>> aa47414353b599ee6b95de140f747e93848c7c9b
                             
                             <%
                     try
