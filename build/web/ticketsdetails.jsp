@@ -27,14 +27,18 @@
                 <a href="#about">Sign Up</a>
                 </div> 
             </center>
-            <center>
-                <table border="0">
+            
                         
+<<<<<<< HEAD
+                            
+                    <center> <h3> Results for Flight Id :<%=request.getParameter("txttkId")%></h3></center>
+=======
                     <th>
                         Results for Flight Id :
                         <%=request.getParameter("txttkId")%>
                     </th>
                                 
+>>>>>>> aa47414353b599ee6b95de140f747e93848c7c9b
                             
                             <%
                     try
@@ -46,11 +50,15 @@
                         Statement st= con.createStatement();
                         
                         int tkId= Integer.parseInt(request.getParameter("txttkId"));
+                        session.setAttribute("tic", tkId);
                         String query="Select * from tickets where ticketID='"+tkId+"'";
                         ResultSet rs=st.executeQuery(query);
                         while(rs.next())
                         {
                 %>
+                <form action="editTicket.jsp">
+                <center>
+                <table border="0">
                         <tr>
                             <td>Ticket ID</td>
                             <td><%=rs.getInt("ticketID")%></td>
@@ -75,6 +83,14 @@
                             <td>Class</td>
                             <td><%=rs.getString("class")%></td>
                         </tr>
+                        <tr>
+                            <td>Number of Passengers</td>
+                            <td><%=rs.getInt("NOP")%></td>
+                        </tr>
+                        <tr>
+                            <td><input class="bttn" type="submit" value="Edit"</td>
+                            <td><input class="bttn" type="reset" value="Back"/></td>
+                        </tr> 
                                <% }
                     }
                       catch(Exception e)
@@ -83,7 +99,10 @@
                     }
                       %>
                 </table>
+                </form>
+                <form action="deleteTicket.jsp"><input class="bttn" type="submit" value="Delete"/></form>
             </center>
+                
         </h3>
     </body>
 </html>
